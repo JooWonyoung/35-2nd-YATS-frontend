@@ -1,6 +1,6 @@
 # 35기 2차 프로젝트 "Oil Of Yats"
 
-https://www.youtube.com/watch?v=fOxNU52Wi0Q
+[프로젝트 시연 영상 링크](https://www.youtube.com/watch?v=fOxNU52Wi0Q "프로젝트 시연영상")
 
 ## 1. 프로젝트 소개
 ### 1-1. 프로젝트 개요
@@ -49,20 +49,13 @@ https://www.youtube.com/watch?v=fOxNU52Wi0Q
  
  ------
  
- ## 4. FRONTEND 필수구현 기능
- 
- ### 4-1. 로그인&회원가입 
- 
- ### 4-2. Stay 리스트 페이지
- 
- ### 4-3. Stay 상세 페이지
- 
- ### 4-4. Room 상세 페이지
- 
- ### 4-5. 마이페이지
- 
- ### 4-6. 입점문의 페이지
+ ## 4. 담당 기능
+ ### 4-1. 입점문의 페이지
 #### 입점 문의 페이지 레이아웃 구현
+<kbd>
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/97422072/194483866-77f76781-2709-4fda-bda2-d93ad8bd8a43.png">
+</kbd>
+
 - styled components를 활용한 레이아웃 구현
 - 반복되는 Input 태그를 map 함수를 사용하여, input type에 맞도록 구현
 - Input 태그 이외에도 select 태그도 ui에 나타낼 수 있도록 구현
@@ -74,9 +67,9 @@ https://www.youtube.com/watch?v=fOxNU52Wi0Q
 - 여러장의 사진을 formData에 저장할 수 있도록 for문을 사용
 
 #### 반복되는 정보 입력란을 map함수를 통해 구현
-- Input 태그가 아닌 select 태그인 경우, 사전 분기 처리를 통해 select와 option태그로 생성되도록 구현
-- input 태그의 type에 따라 다른 형식으로 렌더될 수 있도록 JSX파일을 객체에 저장하고 이 객체를 활용해서 구현
-- 여러 input태그의 스타일을 스타일드 컴포넌트의 동적인 특성을 활용하여 구현
+- input 태그의 type에 따라 다른 형식으로 렌더될 수 있도록 JSX 값을 객체에 저장하여 구현
+- input 태그가 아닌 select 태그인 경우, 사전 분기 처리를 통해 select와 option태그로 생성되도록 구현
+- 여러 input태그의 스타일을 styled component의 동적인 특성을 활용하여 구현
 
 #### 모달창에서 룸 정보를 입력 후 submit 발생 시 룸의 모든 정보를 객체에 담아 저장하고, 룸 ui를 페이지에 띄우는 기능 구현
 - Input태그 onChange 속성에 객체에 정보를 최신화하는 함수를 부여
@@ -85,19 +78,16 @@ https://www.youtube.com/watch?v=fOxNU52Wi0Q
 - 이 객체를 roomList라는 state에 추가하고, 이 state에 map 함수를 적용하여 룸 ui를 렌더
 
 #### 체크박스 체크 시 배열 형태로 객체에 저장, 체크해제시 배열에서 삭제하는 기능 구현.
-- text 타입의 input과 달리, checkbox 타입은 배열안에 값이 추가되는 형식
-- 체크가 발생하면 값이 존재하는지 includes 메소드 활용하고
-- 값이 존재하지 않으면 push 메소드를 활용해 추가
-- 존재하면 filter 메소드를 활용해 해당 값만 삭제하는 로직 구현
+- `text` 타입의 `input`과 달리, `checkbox` 타입은 배열안에 값이 추가되는 형식으로 구현
+- 체크가 발생하면 값이 존재하는지 `includes()` 메소드 활용하고
+- 값이 존재하지 않으면 `push()` 메소드를 활용해 추가
+- 존재하면 `filter()` 메소드를 활용해 해당 값만 삭제하는 로직 구현
 
-#### 모든정보 입력 후 입점문의를 요청하면 객체에 담긴 모든 정보를 formData 형식에 저장하는 로직 구현
-- 폼 제출버튼이 눌리면 input의 onChange 속성을 통해 객체에 저장했던 정보를 모두 formData형식에 저장
-- for문을 활용해 formData 형식 안에 stay 정보가 담긴 객체의 키와 값을 그대로 삽입
+#### 모든정보 입력 후 입점문의를 요청하면 객체에 담긴 모든 정보를 `formData`형식에 저장하는 로직 구현
+- 폼 제출버튼이 눌리면 `input`의 `onChange` 속성을 통해 객체에 저장했던 정보를 모두 `formData`형식에 저장
+- `for`문을 활용해 `formData` 형식 안에 정보가 담긴 객체의 키와 값을 그대로 삽입
 - room 정보 객체의 경우 1개가 아닌 복수이므로 룸 개수만큼 함수가 처리되도록 구현
 - stay 혹은 room 정보 객체 내의 image 정보를 담고있는 value의 경우 2중 for문을 활용하여 구현
-
- ### 4-7. 네비게이션 바 및 푸터
-
 
 -------
 
