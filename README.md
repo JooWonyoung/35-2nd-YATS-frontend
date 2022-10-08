@@ -78,6 +78,7 @@
 - 이 객체를 roomList라는 state에 추가하고, 이 state에 map 함수를 적용하여 룸 ui를 렌더
 
 #### 체크박스 체크 시 배열 형태로 객체에 저장, 체크해제시 배열에서 삭제하는 기능 구현.
+![체크박스 기능](https://user-images.githubusercontent.com/97422072/194521383-d7262345-97cd-44d5-870b-54d63bdc4ffa.gif)
 - `text` 타입의 `input`과 달리, `checkbox` 타입은 배열안에 값이 추가되는 형식으로 구현
 - 체크가 발생하면 값이 존재하는지 `includes()` 메소드 활용하고
 - 값이 존재하지 않으면 `push()` 메소드를 활용해 추가
