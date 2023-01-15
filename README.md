@@ -72,6 +72,7 @@
 - 여러 input태그의 스타일을 styled component의 동적인 특성을 활용하여 구현
 
 #### 모달창에서 룸 정보를 입력 후 submit 발생 시 룸의 모든 정보를 객체에 담아 저장하고, 룸 ui를 페이지에 띄우는 기능 구현
+![룸 UI](https://user-images.githubusercontent.com/97422072/212531104-f6d14946-c837-413e-a0d9-2dfc20865b66.gif)
 - Input태그 onChange 속성에 객체에 정보를 최신화하는 함수를 부여
 - 체크박스 형태의 input은 값이 복수형이므로, 배열 형태로 추가되도록 구현
 - 룸 정보를 입력하고 나서 submit 이벤트가 발생하면 룸 객체 1개가 완성
