@@ -1,6 +1,6 @@
 # 35기 2차 프로젝트 "Oil Of Yats"
 
-[프로젝트 시연 영상 링크](https://www.youtube.com/watch?v=fOxNU52Wi0Q "프로젝트 시연영상")
+[프로젝트 시연 영상 링크](https://www.youtube.com/watch?v=fOxNU52Wi0Q&t=130s "프로젝트 시연영상")
 
 ## 1. 프로젝트 소개
 ### 1-1. 프로젝트 개요
